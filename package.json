@@ -4,7 +4,7 @@
   "description": "",
   "main": "account.js",
   "scripts": {
-   
+    "start": "node account.js"
   },
   "keywords": [],
   "author": "",
