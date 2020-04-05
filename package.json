@@ -2,7 +2,7 @@
   "name": "Loginapp",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "account.js",
   "scripts": {
     "start": "nodemon account.js"
   },
