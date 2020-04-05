@@ -240,6 +240,6 @@ app.get('/sweetie', function(req, resp){
     resp.sendFile('./Imagel/Sweetie.jpg', {root: __dirname});
 });
 
-app.listen(3000, 
+app.listen(3000,  () => {
     console.log('server is listening at 3000')
-    );
+});
