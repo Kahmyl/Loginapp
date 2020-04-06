@@ -7,13 +7,13 @@ const bcrypt = require('bcrypt');
 
 
 
-
+//mysql://b342a80608fcc3:7665fdcc@us-cdbr-iron-east-01.cleardb.net/heroku_43ddecd54bbd469?reconnect=true
 
 var connection = mysql.createConnection({
-	host     : 'localhost',
-	user     : 'root',
-	password : '',
-	database : 'Loginapp'
+	host     : 'us-cdbr-iron-east-01.cleardb.net',
+	user     : 'b342a80608fcc3',
+	password : '7665fdcc',
+	database : 'heroku_43ddecd54bbd469'
 });
 
 
