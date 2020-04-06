@@ -119,9 +119,7 @@ app.get('/Menu-L', function(req, resp){
     resp.sendFile('./Sound/Menu-L.html', {root: __dirname});
 });
 
-app.get('/Search-L', function(req, resp){
-    resp.sendFile('./Sound/search-L.html', {root: __dirname});
-});
+
 
 app.get('/Tracker-L', function(req, resp){
     resp.sendFile('./Sound/Tracker-L.html', {root: __dirname});
@@ -159,9 +157,7 @@ app.get('/Order', function(req, resp){
     resp.sendFile('./Sound/Ordernow.html', {root: __dirname});
 });
 
-app.get('/Search', function(req, resp){
-    resp.sendFile('./Sound/Search.html', {root: __dirname});
-});
+
 
 app.get('/delivery', function(req, resp){
     resp.sendFile('./Sound/Delivery.html', {root: __dirname});
