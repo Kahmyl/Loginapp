@@ -4,7 +4,7 @@
   "description": "",
   "main": "account.js",
   "scripts": {
-    "start": "nodemon account.js"
+    "start": "node account.js"
   },
   "keywords": [],
   "author": "",
