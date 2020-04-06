@@ -10,10 +10,9 @@ const bcrypt = require('bcrypt');
 //mysql://b342a80608fcc3:7665fdcc@us-cdbr-iron-east-01.cleardb.net/heroku_43ddecd54bbd469?reconnect=true
 
 var connection = mysql.createConnection({
-	host     : 'us-cdbr-iron-east-01.cleardb.net',
-	user     : 'b342a80608fcc3',
-	password : '7665fdcc',
-	database : 'heroku_43ddecd54bbd469'
+	connectionString : process.env.DATABASE_URL,
+	ssl: true
+	
 });
 
 
@@ -86,7 +85,8 @@ app.post('/login', function(request, response) {
 						
 					}else{
 						response.send('<h6 style=" color:red; text-align:center; font-family:calibri; font-size:100%;">Incorrect Username and/or Password!</h6>'+'<html><head><meta charset="utf-8"><title>Login</title><style>.login-form {width: 300px;margin: 0 auto;font-family: Tahoma, Geneva, sans-serif;}.login-form h1 {text-align: center;color: #4d4d4d;font-size: 24px;padding: 20px 0 20px 0;}.login-form input[type="password"],.login-form input[type="text"] {width: 100%;padding: 15px;border: 1px solid #dddddd;margin-bottom: 15px;box-sizing:border-box;}.login-form input[type="submit"] {width: 100%;padding: 15px;background-color: #535b63;border: 0;box-sizing: border-box;cursor: pointer;font-weight: bold;color: #ffffff;}button a{text-decoration: none;color:black;justify-content: right;}button a:hover{background-color: lavender;animation-delay: 3s}</style></head><body><button style="background: lavender ; border-radius: 5px;"><a href="https://cryptic-waters-38995.herokuapp.com/register">Sign Up</a></button><div class="login-form"><h1>Login </h1><form action="login" method="POST"><input type="text" name="username" placeholder="Username" required><input type="password" name="password" placeholder="Password" required><input type="submit"></form></div></body></html>');
-					    
+					    console.log(error);
+						
 					}
 				})
 			}
